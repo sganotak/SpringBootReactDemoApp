@@ -20,6 +20,8 @@ To install and run the project, follow these steps:
 
 1. Clone the repository and navigate to the project root directory.
 
+2. If you are building the project for the first time, go to `/src/main/resources/application.properties` and set `spring.jpa.hibernate.ddl-auto=create` or  `spring.jpa.hibernate.ddl-auto=create-drop`, if you want the database to be deleted when the server stops running. If you are using an existing database, set it to `spring.jpa.hibernate.ddl-auto=update`
+
 2. On your terminal build the project using Maven by running `mvn clean install` or if you are a Windows Powershell user run `./mvnw clean install`
 
 3. Navigate to the target directory with `cd target`
