@@ -87,7 +87,7 @@ const UserRegisterForm = () => {
     
     
     console.log(formData);
-    fetch('http://localhost:8080/demo/register', {
+    fetch('/demo/register', {
       method: 'POST',
       mode: "cors",
       headers: {

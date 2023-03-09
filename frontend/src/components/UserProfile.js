@@ -28,7 +28,7 @@ const UserProfile = () => {
 
       const handleDelete = () => {
         if (window.confirm('Are you sure you want to delete this user?')) {
-          fetch(`http://localhost:8080/demo/users/${id}`, { method: 'DELETE' })
+          fetch(`/demo/users/${id}`, { method: 'DELETE' })
             .then(response => {
               if (response.ok) {
                 navigate(`/users`)

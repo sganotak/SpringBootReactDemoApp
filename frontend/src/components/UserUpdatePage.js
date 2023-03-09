@@ -26,7 +26,7 @@ const UserUpdatePage = () => {
  
     
     useEffect(() => {
-        fetch(`http://localhost:8080/demo/users/${id}`)
+        fetch(`/demo/users/${id}`)
           .then(response => response.json())
           .then(data => {setUser(data);
             setHomeAddress(data.homeaddress || null);

@@ -8,6 +8,7 @@ import { Routes,Route } from 'react-router-dom';
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Home from './components/Home';
+import NotFoundPage from './components/NotFoundPage';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/users" element={<UserList/>} />
         <Route path="/users/:id" element={<UserProfile/>} />
         <Route path="/users/edit/:id" element={<UserUpdatePage/>} />
+        <Route path="*" element={<NotFoundPage/>} />
       </Routes>
       <ToastContainer/>
     

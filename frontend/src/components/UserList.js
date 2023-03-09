@@ -17,7 +17,7 @@ const navigate= useNavigate();
     
 
   useEffect(() => {
-    fetch('http://localhost:8080/demo/users')
+    fetch('/demo/users')
       .then(response => response.json())
       .then(data => setusers(data))
       .catch(error => console.log(error));
